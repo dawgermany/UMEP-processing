@@ -358,7 +358,7 @@ class ProcessingSpatialTCAlgorithm(QgsProcessingAlgorithm):
             feedback.setProgressText("Calculating UTCI for all ground level pixels")
             # Recalculating wind speed based on power law
             WsUTCI = (10. / sensorheight) ** 0.2 * wsGrid
-            result = utci.utci_calculator_grid(Ta, RH, tmrtGrid, WsUTCI, feedback)
+            result = utci.utci_calculator(Ta, RH, tmrtGrid, WsUTCI, feedback)
 
         elif tcType == 2:
             # If True = COMFA-kid (Cheng & Brown, 2020), if False = regular COMFA
