@@ -8,7 +8,8 @@ def utci_calculator(Ta, RH, Tmrt, va10m):
     # UTCI, Version a 0.002, October 2009
     # Copyright (C) 2009  Peter Broede
 
-    if Ta <= -999 or RH <= -999 or va10m <= -999 or Tmrt <= -999:
+    if false:
+    #Ta <= -999 or RH <= -999 or va10m <= -999 or Tmrt <= -999:
         UTCI_approx = -999
     else:
         # saturation vapour pressure (es)
